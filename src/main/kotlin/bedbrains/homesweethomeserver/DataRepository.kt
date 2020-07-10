@@ -13,10 +13,31 @@ import bedbrains.shared.datatypes.time.WeeklyTimeSpan
 
 object DataRepository {
     val devices: MutableList<Device> = mutableListOf(
+        Heating(UIDProvider.newUID, "Küche", "Heizung", 22.celsius).apply {
+            tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
+        },
+        Light(UIDProvider.newUID, "Küche", "Boden").apply {
+            tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
+        },
+        Heating(UIDProvider.newUID, "Badezimmer", "Bodenheizung", 22.celsius).apply {
+            tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
+        },
+        Light(UIDProvider.newUID, "Badezimmer", "Decke").apply {
+            tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
+        },
         Heating(UIDProvider.newUID, "Keller", "Heizung", 22.celsius).apply {
             tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
         },
-        Light(UIDProvider.newUID, "Keller", "Decke").apply {
+        Light(UIDProvider.newUID, "Wohnzimmer", "Decke").apply {
+            tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
+        },
+        Light(UIDProvider.newUID, "Wohnzimmer", "Ecke").apply {
+            tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
+        },
+        Light(UIDProvider.newUID, "Wohnzimmer", "Tisch").apply {
+            tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
+        },
+        Light(UIDProvider.newUID, "Keller", "Wand").apply {
             tags = mutableSetOf("Nice", "Yeet", "Amazing", "Cool", "But why?", "Hello there", "Maaaan")
         }
     )
